@@ -1,0 +1,170 @@
+*{padding: 0%;
+    margin: 0%;
+    }
+    
+    
+    body{
+        background-color: rgb(243, 252, 231);
+    }
+    
+    
+    header{
+        background-color: rgb(250, 229, 253);
+        height: 80px;
+        width:100%; 
+    }
+    h1{
+        color: rgb(70, 69, 170);
+    position: absolute;
+    left: 40px;
+    top: 0%;
+    line-height: 80px;
+    background-image: url(image/niko_logo-removebg-preview.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    text-indent: -9999px;
+    }
+    header ul{
+        position: absolute;
+        right: 5vw;
+        top: 0;
+        line-height: 80px;
+    }
+    header li{
+        display: inline;
+        margin: 5vw;
+    
+    
+    }
+    header a{
+        color: rgb(0, 183, 255);
+        text-decoration: none;
+    
+    
+    }
+    header a:hover{
+        color: rgb(243, 171, 39);
+        text-decoration: underline;
+    }
+    
+    
+    .news{
+        background-color: aliceblue;    
+        color: aliceblue;
+        height: 95vh;
+        background-image:url(image/);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .news h2{
+        font-size: 50px;
+        margin-top: 60px;
+       
+    }
+    .news p{
+        color: aliceblue;
+        font-size: 18px;
+        margin: 25px 0;
+    }
+    .news a{
+        color: aquamarine;
+        text-decoration: none;
+        border: paleturquoise 1px solid#ACD6FF;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .slogan{ 
+        background-color: rgb(185, 215, 241);    
+        color: rgb(84, 1, 95);
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+        line-height: 1.8em;
+    }
+    .shop{
+    display:flex;    
+    }
+    .shop img{
+        width: 50%;
+    }
+    .info{
+        width:50%;
+        background-color: blueviolet;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info h2{
+        font-size: 40px;
+        margin-bottom: 30;
+    
+    }
+.info p{
+    text-align: 40px;
+    line-height: 20m;
+
+}
+.product{
+    display:flex;
+    background-color: blueviolet;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+.product{
+    width:300px;
+    text-align:center;
+
+}
+
+.product img{
+    width:100%;
+    border-radius: 10px;
+}
+.product h3{
+    font-size: 20;
+    margin: 20px 0;
+}
+.product p{
+    font-size: 14px;
+    line-height: 1.6em;
+
+}
+.footer{
+    background-color: antiquewhite;
+    color: black;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:14px;
+}
+.menu{
+    display: none;
+}
+@media screen and(max-width:768px){
+    header ul{
+        display: none;
+    }
+    header h1{
+        left:50%;
+        transform: translate(-50%);
+    }
+    .menu{
+        display:block;
+        background-color: transparent;
+        color:thistle;
+        font-size: 35px;
+        position: absolute;
+    }
+}
