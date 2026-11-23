@@ -54,7 +54,7 @@
         background-color: aliceblue;    
         color: aliceblue;
         height: 95vh;
-        background-image:url(image/);
+        background-image:url(image/topbanner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -121,24 +121,22 @@
     align-items: center;
     padding: 100px 180px 80px;
 }
-.product{
+.product div {
     width:300px;
     text-align:center;
-
 }
-
-.product img{
+.product img {
     width:100%;
     border-radius: 10px;
 }
-.product h3{
-    font-size: 20;
+.product h3 {
+    font-size: 20px;    
     margin: 20px 0;
 }
+
 .product p{
     font-size: 14px;
     line-height: 1.6em;
-
 }
 .footer{
     background-color: antiquewhite;
@@ -149,22 +147,61 @@
     align-items: center;
     font-size:14px;
 }
+
+
 .menu{
     display: none;
 }
-@media screen and(max-width:768px){
+
+/* 響應式網頁語法 */
+@media screen and (max-width: 768px) { 
     header ul{
         display: none;
     }
+
     header h1{
-        left:50%;
+        left: 50%;
         transform: translate(-50%);
     }
+
+    .news h2{
+        font-size: 40px;
+    } 
+
     .menu{
-        display:block;
+        display: block;
         background-color: transparent;
-        color:thistle;
+        color: white;
         font-size: 35px;
         position: absolute;
+        top:15px;
+        border: none;
+        cursor:pointer;
+    }
+
+    .shop{
+        flex-direction: column;
+    }
+
+    .shop img{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .info h2{
+        font-size: 30px;
+    }
+
+    .product{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .product div{
+        margin-bottom: 30px;
     }
 }
